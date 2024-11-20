@@ -1,0 +1,324 @@
+.about2-container {
+  font-family: Arial, sans-serif;
+  /* padding: 20px;
+    margin: 30px; */
+  color: #333;
+  line-height: 1.6;
+
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.header h1 {
+  color: #4CAF50;
+}
+
+.car-details {
+  margin-bottom: 40px;
+}
+
+.car-table {
+  width: 100%;
+
+  margin-top: 10px;
+  border-spacing: 2px;
+}
+
+.car-table th,
+.car-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  /* text-align: left; */
+}
+
+.car-table td {
+  background-color: #D5F2C8;
+}
+
+.car-table th {
+  color: white;
+  background-color: #4A7437;
+}
+
+.why-choose {
+  display: flex;
+}
+
+.why-one-way {
+  display: flex;
+  justify-content: center;
+  /* justify-items: center; */
+}
+
+/* .why-one-way-div1 .why-one-way-div3 {
+    border-radius:  20px solid black; 
+    background-color: #585858;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+} */
+
+
+.why-choose,
+.why-one-way {
+  margin-top: 20px;
+}
+
+.why-choose h2,
+.why-one-way h2 {
+  color: #585858;
+}
+
+.why-choose-container .span2 {
+  color: #585858;
+  font-weight: bold;
+}
+
+.why-choose-container .span1 {
+  color: #4A7437;
+  font-weight: bold;
+}
+
+.features-list {
+  list-style: none;
+  padding: 0;
+}
+
+.features-list li {
+  /* background: url('https://cdn-icons-png.flaticon.com/512/1055/1055647.png') no-repeat left center; */
+  /* background-size: 20px; */
+  /* padding-left: 30px; */
+  /* margin-bottom: 10px; */
+}
+
+
+.why-choose-container p {
+  font-size: 18px;
+  line-height: 1.6;
+  letter-spacing: 0.5px;
+  margin-bottom: 10px;
+}
+
+.why-one-way {
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 0;
+  text-align: center;
+}
+
+.why-one-way-div {
+  flex: 1;
+  padding: 20px;
+  margin: 0 10px;
+  background-color: #d6d3d3;
+  border: 1px solid black;
+  border-radius: 10px;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+}
+
+.why-one-way-div img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin: 0 auto;
+  display: block;
+}
+
+.features-list {
+
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+.features-list li {
+  /* text-decoration: solid; */
+  background: url('https://cdn-icons-png.flaticon.com/512/1055/1055647.png') no-repeat left center;
+  background-size: 20px;
+  padding-left: 30px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.why-one-way-div:nth-child(2) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  box-shadow: none;
+}
+
+
+.journey-highlight {
+  height: auto;
+  background-color: #4A7437;
+  color: white;
+  text-align: center;
+  margin-top: 10px;
+  border-radius: 10px;
+  /* font-size: 18px; */
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  word-spacing: 8px;
+  padding: 20px;
+}
+
+
+.journey-highlight .line-one,
+.journey-highlight .line-two {
+  display: block;
+  line-height: 0.5;
+}
+
+
+.why-one-way-h1 {
+  text-align: center;
+  color: #4A7437;
+}
+
+.discover {
+  margin: 20px;
+  color: #71766F;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 0.7px;
+  word-spacing: 5px;
+  text-align: justify;
+  text-align-last: center;
+}
+
+.discover span {
+  color: #4A7437;
+}
+
+.travel-info {
+  /* border: 1px solid; */
+  border-radius: 10px;
+  background-color: #ced0d4c9;
+  margin: 10px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+
+  padding: 20px;
+  color: #4A4A4A;
+
+}
+
+.travel-info li {
+  margin-bottom: 20px;
+}
+
+.travel-info span {
+  text-decoration: solid;
+  font-weight: bold;
+}
+
+
+.motion-img img {
+  width: 665px;
+  height: 350px;
+}
+
+@media (max-width: 1024px) and (min-width: 652px) {
+
+  .why-choose-container,
+  h2,
+  p {
+    line-height: 25px;
+  }
+
+  .motion-img img {
+    margin-top: 100px;
+    width: 266px;
+    height: 200px;
+  }
+
+  .journey-highlight {
+    font-size: 10px;
+    margin: 0px;
+    padding: 8px;
+  }
+
+
+}
+
+@media (max-width: 653px) and (min-width: 550px) {
+
+  .why-choose-container,
+  h2,
+  p {
+    line-height: 25px;
+  }
+
+  .motion-img img {
+    margin-top: 100px;
+    width: 266px;
+    height: 200px;
+  }
+
+  .journey-highlight {
+    font-size: 8px;
+    margin: 0px;
+    padding: 8px;
+  }
+}
+
+@media (max-width: 550px) and (min-width: 0px) {
+
+  .why-choose-container,
+  h2,
+  p {
+    line-height: 25px;
+  }
+
+  .motion-img img {
+    margin-top: 100px;
+    width: 266px;
+    height: 200px;
+  }
+
+  .journey-highlight {
+    font-size: 5px;
+    margin: 0px;
+    padding: 8px;
+  }
+
+  /* .car-details{
+    margin: 10px;
+    width: 30px;
+  } */
+}
+
+
+@media (max-width: 450px) {
+
+  .car-table th,
+  .car-table td {
+    font-size: 12px;
+    /* Adjust font size for readability */
+    padding: 5px;
+    /* Reduce padding */
+  }
+
+  .car-table {
+    font-size: 10px;
+  }
+
+  .why-one-way {
+    flex-direction: column;
+    /* Stack child elements vertically */
+    align-items: stretch;
+    /* Make child elements fill the container */
+  }
+
+  .why-one-way-div {
+    flex: 1 1 100%;
+    /* Child elements take full width */
+    max-width: 100%;
+    /* Remove restrictions on width */
+  }
+
+}
