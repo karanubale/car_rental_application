@@ -22,7 +22,7 @@ const Navbar = () => {
                     <img src={down} alt="Download App" />
                     <p>Download app</p>
                 </div>
-                <div className="navbar-item">
+                <div className="navbar-item profile">
                     <img src={profile} alt="Profile" />
                     <p>Hi, Ravi</p>
                 </div>

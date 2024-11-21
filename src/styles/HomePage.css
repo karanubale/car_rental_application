@@ -19,10 +19,10 @@ body {
     height: 453px;
     background: url('https://s3-alpha-sig.figma.com/img/d2d9/3c47/abf65e6a667c112ee138901c5ae357a3?Expires=1733097600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=TlEZc6QH1c0cUakA0fEuP90KoTeZHGTNYLGtq0-ZsQFac8hvQ5cSjZsqp5F0r4AN~Sw~qDBMRMcmAO2v0Pl6-HP4xyiCT0tmbMEVSc0EfISAT3Yz3XJjpDb-mUXD8N0S1squRpL~H35pjNEv7unx8zBHxz0Hw4nbrdL~EGylOghWzyrKXn2bjS5uhmerdisFlCatsnpM9jksR~Y7gkGi13Sfm-aM-mGy3KDrwduokARq-3CTOgksnRM11TjNVup4BkptM8tXR60E6FXVOXtBmfS-MDsA8R2vF-jmkZtqeK3KKz9faOiYi4QmGkN7qIgWArvNzWjdpX25MldPMRxwog__') no-repeat center center;
     /* background-image: url('https://s3-alpha-sig.figma.com/img/d2d9/3c47/abf65e6a667c112ee138901c5ae357a3?Expires=1733097600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=TlEZc6QH1c0cUakA0fEuP90KoTeZHGTNYLGtq0-ZsQFac8hvQ5cSjZsqp5F0r4AN~Sw~qDBMRMcmAO2v0Pl6-HP4xyiCT0tmbMEVSc0EfISAT3Yz3XJjpDb-mUXD8N0S1squRpL~H35pjNEv7unx8zBHxz0Hw4nbrdL~EGylOghWzyrKXn2bjS5uhmerdisFlCatsnpM9jksR~Y7gkGi13Sfm-aM-mGy3KDrwduokARq-3CTOgksnRM11TjNVup4BkptM8tXR60E6FXVOXtBmfS-MDsA8R2vF-jmkZtqeK3KKz9faOiYi4QmGkN7qIgWArvNzWjdpX25MldPMRxwog__'); */
-    background-size: cover;
+    /* background-size: cover; */
     color: white;
     text-align: center;
-    padding: 50px 20px;
+    /* padding: 50px 20px; */
 }
 
 .banner h1 {
@@ -159,7 +159,7 @@ body {
 }
 
 .banner-content h1 span {
-    color: #216900;
+    color: #45D203;
     font-weight: bold;
 }
 
@@ -262,6 +262,11 @@ body {
     justify-content: space-between;
 }
 
+.input-row img {
+    /* display: none; */
+    margin-top: 12px;
+}
+
 /* @media screen and (max-width: 768px) {
     .form-container {
         width: 100%;
@@ -281,27 +286,31 @@ body {
     }
 } */
 
-@media (max-width: 1024px) and (min-width: 0px) {
+@media (max-width: 1024px) and (min-width: 300px) {
 
     .banner {
         flex-direction: column;
         align-items: center;
         margin-bottom: 0px;
-       
+
     }
 
     .banner-content h1 {
         margin-left: 40px;
         margin-top: 0px;
         font-size: 30px;
-  
+
+    }
+
+    .input-row img {
+        display: none;
     }
 
 
     .form-container {
         margin-top: -50px;
         width: 80%;
-    
+
         padding: 15px;
         height: auto;
 
@@ -312,11 +321,11 @@ body {
     .input-row {
         display: flex;
         flex-direction: column;
-       
+
         gap: 10px;
         width: 100%;
         justify-content: flex-start;
-  
+
     }
 
     .input-fields input {
@@ -339,14 +348,35 @@ body {
     .features {
         margin-top: 20px;
 
-        flex-direction: column;
-       
+        /* flex-direction: column; */
+
     }
 
     .feature {
         margin-bottom: 20px;
 
+
     }
+
+    .feature h1 {
+        /* margin-bottom: 20px; */
+        font-size: 20px;
+    }
+
+    .feature p {
+        /* margin-bottom: 20px; */
+        font-size: 13px;
+
+    }
+
+    .feature img {
+        /* margin-bottom: 20px; */
+        height: 30px;
+        width: 80px;
+        margin: 5px;
+
+    }
+
 
     .btn {
         padding: 7px;
@@ -365,7 +395,7 @@ body {
 
     .input-fields input {
         margin: 0px;
- 
+
     }
 
     .explore-btn {
@@ -375,8 +405,6 @@ body {
     .input-row {
         gap: 5px;
     }
-    
-
 
 }
 
@@ -405,33 +433,32 @@ body {
 } */
 
 
-
+/*
 @media screen and (max-width: 1024px) {
-    /* For screens with width 1024px or less */
+
     .features {
-        /* justify-content: center; */
+
         align-items: center;
-        flex-direction: row; /* Keep 1st and 3rd feature in a row */
+        flex-direction: row; 
         justify-content: space-between;
     }
 
     .feature:nth-child(1), .feature:nth-child(3) {
-        width: 48%; /* These will be in a row */
+        width: 48%;
         justify-content: center;
     }
 
     .feature:nth-child(2) {
-        width: 100%;  /* The second feature will take full width and go below */
+        width: 100%;
         text-align: center;
     }
 
-    /* Optional: Center the content inside the second feature */
     .feature:nth-child(2) h1 {
-        text-align: center; /* Center the title */
+        text-align: center;
     }
 
     .feature:nth-child(2) img {
-        display: block; /* Ensures images are block-level elements */
+        display: block; 
         margin: 0 auto; 
         max-width: 100%;
         height: auto;
@@ -445,8 +472,143 @@ body {
 
     }
     .feature img { 
-       /* margin-top: 40px; */
+
         width: 120px;
     }
     
+}
+
+*/
+
+
+
+@media (max-width: 300px) and (min-width: 0px) {
+
+    .banner {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 0px;
+
+    }
+    
+
+    .banner-content h1 {
+        margin-left: 40px;
+        margin-top: 0px;
+        font-size: 20px;
+
+    }
+
+
+    .form-container {
+        margin-top: -50px;
+        width: 80%;
+
+        padding: 15px;
+        height: auto;
+
+    }
+
+
+
+    .input-row {
+        display: flex;
+        flex-direction: column;
+
+        gap: 10px;
+        width: 100%;
+        justify-content: flex-start;
+
+    }
+
+    .input-fields input {
+        width: 100%;
+
+        font-size: 14px;
+    }
+
+
+    .btn {
+        padding: 8px 15px;
+    }
+
+    .explore-btn {
+        width: 100%;
+
+    }
+
+
+    .features {
+        margin-top: 20px;
+
+        flex-direction: column;
+
+    }
+
+    .feature {
+        margin-bottom: 20px;
+
+    }
+
+    .btn {
+        padding: 7px;
+        margin: 0 2px;
+        width: 105px;
+    }
+
+    .from {
+        width: 70px;
+    }
+
+    .trip-options,
+    .trip-type {
+        margin-bottom: 0px;
+    }
+
+    .input-fields input {
+        margin: 0px;
+
+    }
+
+    .explore-btn {
+        margin: 0px;
+    }
+
+    .input-row {
+        gap: 5px;
+    }
+
+    .features {
+        margin-left: 20px;
+    }
+
+    .feature h1 {
+        /* margin-bottom: 20px; */
+        font-size: 15px;
+    }
+
+    .feature p {
+        /* margin-bottom: 20px; */
+        font-size: 9px;
+
+    }
+
+    .feature img {
+        /* margin-bottom: 20px; */
+        height: 30px;
+        width: 80px;
+        margin: 5px;
+
+    }
+
+    .banner-content h1 {
+        margin-left: 40px;
+        margin-top: 0px;
+        font-size: 20px;
+        margin-bottom: 50px;
+    }
+    .input-row img {
+        display: none;
+    }
+
 }

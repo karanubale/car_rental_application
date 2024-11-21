@@ -17,7 +17,7 @@
 }
 
 .car-details {
-  margin-bottom: 40px;
+  margin: 10px;
 }
 
 .car-table {
@@ -44,6 +44,7 @@
 }
 
 .why-choose {
+  margin: 10px;
   display: flex;
 }
 
@@ -156,7 +157,7 @@
   background-color: #4A7437;
   color: white;
   text-align: center;
-  margin-top: 10px;
+  margin: 20px;
   border-radius: 10px;
   /* font-size: 18px; */
   font-weight: bold;
@@ -242,6 +243,20 @@
     padding: 8px;
   }
 
+  .discover {
+    /* margin: 20px; */
+    /* color: #71766F; */
+    font-size: 10px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    word-spacing: 4px;
+    text-align: justify;
+    text-align-last: center;
+  }
+  .why-one-way-h1 h1{
+    font-size: 30px;
+  }
+
 
 }
 
@@ -264,14 +279,72 @@
     margin: 0px;
     padding: 8px;
   }
+  .features-list li {
+    /* text-decoration: solid; */
+    /* background: url('https://cdn-icons-png.flaticon.com/512/1055/1055647.png') no-repeat left center; */
+    /* background-size: 20px; */
+    padding-left: 30px;
+    margin-bottom: 10px;
+    font-size: 12px;
+    line-height: 1.1;
+  }
+  .why-one-way-div{
+    height: 200px;
+  }
+  .why-one-way-div img{
+    height: 150px;
+  }
+
+  .discover {
+    /* margin: 20px; */
+    /* color: #71766F; */
+    font-size: 9px;
+    font-weight: 400;
+    letter-spacing: 0.4px;
+    word-spacing: 3px;
+    text-align: justify;
+    text-align-last: center;
+  }
+ 
+
+
+
+
+
+
+  .travel-info {
+    /* border: 1px solid; */
+    border-radius: 10px;
+    background-color: #ced0d4c9;
+    margin: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+  
+    padding: 10px;
+    color: #4A4A4A;
+  
+  }
+  
+  .travel-info li {
+    margin-bottom: 20px;
+  }
+  
+  
 }
 
-@media (max-width: 550px) and (min-width: 0px) {
+@media (max-width: 550px) and (min-width: 350px) {
 
-  .why-choose-container,
-  h2,
-  p {
+  .why-choose-container
+  h2 {
+    margin: 10px;
+    font-size: 15px;
     line-height: 25px;
+  }
+  .why-choose-container
+  p {
+    margin: 10px;
+    font-size: 10px;
+    line-height: 20px;
   }
 
   .motion-img img {
@@ -281,30 +354,114 @@
   }
 
   .journey-highlight {
-    font-size: 5px;
-    margin: 0px;
-    padding: 8px;
+    
+    font-size: 6px;
+    margin: 2px;
+    padding: 6px;
+    letter-spacing: 0.5;
+    word-spacing: 0;
   }
 
   /* .car-details{
     margin: 10px;
     width: 30px;
   } */
-}
-
-
-@media (max-width: 450px) {
-
   .car-table th,
   .car-table td {
-    font-size: 12px;
+    font-size: 10px;
     /* Adjust font size for readability */
-    padding: 5px;
+    padding: 3px;
     /* Reduce padding */
   }
 
   .car-table {
+   
+    font-size: 2px;
+  }
+
+
+  .why-choose-container
+  h2 {
+  
+    font-size: 15px;
+    line-height: 25px;
+  }
+  .why-choose-container,
+  p {
+    /* margin: px; */
+    margin-top: -10px;
     font-size: 10px;
+    line-height: 20px;
+  }
+
+  .motion-img img {
+    margin-top: 70px;
+    width: 166px;
+    height: 150px;
+  }
+
+
+  .features-list li {
+    /* text-decoration: solid; */
+    /* background: url('https://cdn-icons-png.flaticon.com/512/1055/1055647.png') no-repeat left center; */
+    /* background-size: 20px; */
+    padding-left: 25px;
+    /* margin-bottom: 10px; */
+    font-size: 7px;
+    line-height: 0.9;
+  }
+  .why-one-way-div{
+    padding: 10px;
+    height: 130px;
+  }
+  .why-one-way-div img{
+    height: 110px;
+  }
+  .discover {
+    /* margin: 20px; */
+    /* color: #71766F; */
+    font-size: 7px;
+    font-weight: 400;
+    letter-spacing: 0.4px;
+    word-spacing: 3px;
+    text-align: justify;
+    text-align-last: center;
+  }
+  .why-one-way-h1 h1{
+    font-size: 20px;
+  }
+  .travel-info {
+    /* border: 1px solid; */
+    border-radius: 10px;
+    background-color: #ced0d4c9;
+    margin: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+  
+    padding: 10px;
+    color: #4A4A4A;
+  
+  }
+  
+  .travel-info li {
+    margin-bottom: 20px;
+  }
+}
+
+
+@media (max-width: 350px) and (min-width:0px) {
+
+  .car-table th,
+  .car-table td {
+    font-size: 10px;
+    /* Adjust font size for readability */
+    padding: 3px;
+    /* Reduce padding */
+  }
+
+  .car-table {
+   
+    font-size: 2px;
   }
 
   .why-one-way {
@@ -319,6 +476,105 @@
     /* Child elements take full width */
     max-width: 100%;
     /* Remove restrictions on width */
+  }
+  .why-choose-container
+  h2 {
+  
+    font-size: 15px;
+    line-height: 25px;
+  }
+  .why-choose-container,
+  p {
+    /* margin: px; */
+    margin-top: -10px;
+    font-size: 10px;
+    line-height: 20px;
+  }
+
+  .motion-img img {
+    margin-top: 50px;
+    width: 100px;
+    height: 120px;
+  }
+
+  .journey-highlight {
+    font-size: 5px;
+    margin: 0px;
+    padding: 8px;
+   
+  }
+
+  .why-choose-container
+  p {
+    margin: 10px;
+    font-size: 10px;
+    line-height: 10px;
+  }
+  .why-choose-container
+  h2 {
+    margin: 10px;
+    font-size: 10px;
+    line-height: 10px;
+  }
+
+
+  
+  .features-list li {
+    /* text-decoration: solid; */
+    /* background: url('https://cdn-icons-png.flaticon.com/512/1055/1055647.png') no-repeat left center; */
+    /* background-size: 20px; */
+    /* padding-left: 25px; */
+    /* margin-bottom: 10px; */
+    /* font-size: 7px; */
+    line-height: 1;
+  }
+  .why-one-way-div{
+    margin-bottom: 10px;
+    padding: 10px;
+    height: 130px;
+  }
+  .why-one-way-div img{
+    height: 110px;
+  }
+  .discover {
+    /* margin: 20px; */
+    /* color: #71766F; */
+    font-size: 7px;
+    font-weight: 400;
+    letter-spacing: 0.4px;
+    word-spacing: 3px;
+    text-align: justify;
+    text-align-last: center;
+  }
+  
+
+  
+  .journey-highlight {
+    
+    font-size: 3px;
+    margin: 5px;
+    padding: 6px;
+    letter-spacing: 0.2;
+    word-spacing: 0;
+  }
+  .why-one-way-h1 h1{
+    font-size: 15px;
+  }
+  .travel-info {
+    /* border: 1px solid; */
+    border-radius: 10px;
+    background-color: #ced0d4c9;
+    margin: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+  
+    padding: 10px;
+    color: #4A4A4A;
+  
+  }
+  
+  .travel-info li {
+    margin-bottom: 20px;
   }
 
 }
